@@ -5,7 +5,11 @@ CMS Builder Community Edition es un generador de aplicaciones CRUD desarrollado 
 
 El sistema genera automáticamente tablas, formularios, relaciones entre módulos y una API REST lista para consumir desde cualquier aplicación.
 
----
+Este proyecto contiene la base del instalador y la configuración inicial necesaria para preparar una instalación del sistema.
+
+La versión actual del CMS se encuentra en:
+
+https://github.com/puricalvo/cms-builder
 
 ## Características
 
@@ -19,8 +23,6 @@ El sistema genera automáticamente tablas, formularios, relaciones entre módulo
 * Integración con ChatGPT mediante API.
 * Arquitectura MVC sencilla y extensible.
 
----
-
 ## Requisitos
 
 * PHP 8.1 o superior.
@@ -28,29 +30,33 @@ El sistema genera automáticamente tablas, formularios, relaciones entre módulo
 * Composer.
 * Servidor Apache o Nginx.
 
----
-
 ## Instalación
 
 1. Clona o descarga el proyecto.
 
 2. Instala las dependencias de Composer.
 
+---
 ```bash
 composer install
 ```
+---
 
 3. Copia el archivo:
 
+---
 ```text
 .env.template
 ```
+---
 
 como:
 
+---
 ```text
 .env
 ```
+---
 
 y configura las variables de entorno.
 
@@ -65,10 +71,9 @@ Durante la instalación se crearán automáticamente:
 * El usuario SuperAdmin.
 * La estructura inicial del sistema.
 
----
-
 ## Estructura del proyecto
 
+---
 ```text
 web/
 │
@@ -85,7 +90,6 @@ web/
 ├── index.php
 └── README.md
 ```
-
 ---
 
 ## API REST
@@ -101,15 +105,11 @@ La API permite realizar operaciones:
 
 sin necesidad de escribir código adicional.
 
----
-
 ## ChatGPT
 
 CMS Builder permite integrar ChatGPT dentro de cualquier módulo mediante campos dinámicos.
 
 Para utilizar esta funcionalidad es necesario configurar las credenciales de OpenAI desde el panel de administración.
-
----
 
 ## Personalización
 
@@ -121,15 +121,11 @@ El dashboard permite configurar:
 * Tipografía.
 * Imagen de fondo del login.
 
----
-
 ## Licencia
 
 CMS Builder Community Edition se distribuye para fines educativos y de desarrollo.
 
 Puedes modificarlo y adaptarlo a tus propios proyectos respetando las condiciones de la licencia correspondiente.
-
----
 
 ## Autor
 
